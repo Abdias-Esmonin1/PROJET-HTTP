@@ -1,0 +1,73 @@
+
+Pour executer le fichier interface.py
+ensuite entrez un URL
+puis en fonction des boutons 
+tester le temps d'exécution de chaque versions du http 
+Puis telecharger la page de l'url 
+afficher la perfornnance à l'aide du graphe 
+
+
+*****************
+Fonctionnement du projet 
+*****************
+
+### fichier (http_cleint.py) ###
+Utilisation des différentes bibliothèques Python pour effectuer des requêtes HTTP avec différents protocoles, allant de HTTP/1.0 à HTTP/3.
+ Il met en évidence :
+La flexibilité des bibliothèques httpx et aioquic.
+L'importance de choisir le protocole HTTP adapté en fonction des besoins.
+L'utilisation de la programmation asynchrone pour améliorer les performances.
+
+### fichier (interface.py) ###
+c'est le fichier qui réalise le projet avec une interface bien defnii pour faciliter la tâche à l'utilisaeur. 
+lancer le fichier avec un éditeur et un intreprèteur Python.
+
+### fichier (performance) ###
+Ce fichier faire la même action mais en interface graphique 
+
+### NB : il faut noter que less trois fichier doit être dans le même fichier 
+
+
+# Notes sur les bibliothèques Python mentionnées
+
+****************
+Bibliothèque utilisé
+****************
+
+installer  les Biblithèque avec
+pip install .......
+
+## 1. **httpx**
+   Une bibliothèque Python moderne pour effectuer des requêtes HTTP.
+   - Prend en charge HTTP/1.1 et HTTP/2.
+   - Permet d'utiliser des connexions synchrones et asynchrones.
+   - Idéale pour les applications modernes ayant besoin de flexibilité 
+     dans la gestion des protocoles HTTP.
+
+## 2. **aiohttp**
+   Une bibliothèque Python asynchrone pour gérer des connexions HTTP/1.1 et HTTP/2.
+   - Particulièrement utile pour les tâches de téléchargement concurrent.
+   - Fonctionne parfaitement avec `asyncio`, la bibliothèque standard d'exécution asynchrone de Python.
+
+## 3. **matplotlib**
+   Une bibliothèque puissante pour la visualisation de données en Python.
+   - Permet de créer une grande variété de graphiques et visualisations.
+   - Utile pour tracer les performances, par exemple pour comparer 
+     les temps de téléchargement entre HTTP/1.1, HTTP/2 et HTTP/3.
+
+## 4. **asyncio**
+   Une bibliothèque standard de Python pour gérer l'exécution asynchrone.
+   - Permet de lancer et de coordonner plusieurs tâches en parallèle.
+   - Idéale pour des opérations comme le téléchargement simultané de plusieurs fichiers.
+
+## 5. **PySide6**
+   Une bibliothèque Python pour le développement d’interfaces graphiques (GUI).
+   - Basée sur Qt pour créer des applications multiplateformes modernes.
+   - Fournit des outils flexibles pour intégrer des graphiques, des widgets et d’autres composants visuels.
+
+## 6. **aioquic**
+   Une implémentation asynchrone de QUIC et HTTP/3 en Python.
+   - Permet de travailler avec les protocoles récents et d’explorer leurs avantages.
+   - Idéale pour des applications nécessitant une faible latence et des performances optimales.
+
+
